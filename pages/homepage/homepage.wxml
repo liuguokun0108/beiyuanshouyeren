@@ -1,0 +1,62 @@
+<view>
+<image class='background' src="cloud://ableo-jns0t.6162-ableo-jns0t-1301684914/图怪兽_bf2b7a1266255908c3efb27ebc43dc93_52786.jpg" mode="aspectFill" style="opacity:{{0.6}}"></image>
+
+<view class="a"><!-- 定义两个话题按钮 -->
+<navigator  url="/pages/newtopic/newtopic" open-type="switchTab" hover-class="nav-hover" class="nav-default">新建话题</navigator>
+<navigator  url="../quanbu/quanbu"  hover-class="nav-hover" class="nav-default">全部话题</navigator>
+</view>
+<view class="b"></view><!-- 定义按钮与下面列表的间距 -->
+ <view  style="border:2px solid #f5f5f5"></view>
+<!-- 每一条话题的整个框架 -->
+<!--页面根标签-->
+
+<scroll-view  wx:for="{{data}}" wx:key="key" wx:for-item="item" wx:for-index="index" wx:if="{{index<3}}" data-pos='{{index}}' bindtap='bindtap' class="biankuang">  <!-- 最外框架1 -->
+  <navigator url="../product/product?id={{item._id}}">
+  <view  class="topic" ><!-- 定义列表 -->
+      <view class="head">
+      <image src="{{item.image}}" class="image"></image>
+      </view><!-- 定义头像 -->
+        <view class="user-time">
+        <text class="colorname">{{item.name}}</text>  
+        <text class="time">{{item.time}}</text>
+        </view>      
+  </view>
+  <view class="discussimage">
+  <image src="../../images/huati1.png" class="discussimage2"></image>
+<text class="text" decode="true" space="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;话题：{{item.newtopic}}</text>  </view>
+  </navigator> 
+    <!---->
+<view  >
+        <view class="item" data-index='{{item.id}}'>
+          <view class='wish_list_box_collection' wx:if="{{item.collected==1}}">
+            <!-- 点赞过 -->
+            <image bindtap='onCollectionTap' src="cloud://ableo-jns0t.6162-ableo-jns0t-1301684914/praise/点赞 (1).png" data-index='{{index}}' data-id="{{item._id}}"></image>
+            <text>{{item.praise}}</text>
+          </view>
+          <view class='wish_list_box_collection' wx:else>
+            <!-- 未点赞 -->
+            <image src='cloud://ableo-jns0t.6162-ableo-jns0t-1301684914/点赞 (3).png' bindtap='onCollectionTap' data-index='{{index}}' data-id="{{item._id}}"></image>
+            <text>{{item.praise}}</text>
+          </view>
+        </view>
+</view>
+<!---->
+  <swiper class="swiper_container" vertical="true" autoplay="true" circular="true" interval="2000">
+    <block wx:for="{{item.pinglun}}" wx:key="_id" wx:for-item="twodata" wx:for-index="i">
+      <swiper-item>
+        <view class="pinglunyangshi"><text class="underdiscuss">评论:</text><text class="underdiscuss2">{{twodata}}</text></view>
+      </swiper-item>
+    </block>
+  </swiper>
+   <view  style="border:2px solid #f5f5f5"></view>
+
+</scroll-view>
+
+
+</view>
+
+
+
+
+
+

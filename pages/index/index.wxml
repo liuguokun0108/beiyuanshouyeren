@@ -1,0 +1,20 @@
+<view>
+
+ <view class="top">
+   <text style="font-weight:bold" color="green">北院守夜人</text>
+   <view class="head"></view>
+   <view wx:if="{{!openid}}">
+    <button open-type="getUserInfo" lang="zh_CN" bindgetuserinfo="onGotUserInfo" type="primary">守夜人登录</button>
+   </view>
+   <view wx:if="{{openid}}">
+    <image src="{{userinfo.avatarUrl}}" class="image"></image>
+    <view class="name">{{userinfo.nickName}}</view>
+   </view>
+ </view>
+     <view class="a"></view>
+    <view class="under" >
+      <navigator bindtap="f0" style="border:4rpx solid;border-color:aliceblue" url="../fabude/fabude" class="color1">发布的话题</navigator> <!-- 提前给你绑定一个触发事件 -->
+      <view class="b"></view>
+      <navigator bindtap="f0" style="border:4rpx solid;border-color:aliceblue" url="../yijian/yijian" class="color2">意见反馈</navigator><!-- 提前给你绑定一个触发事件 -->
+    </view>
+</view>

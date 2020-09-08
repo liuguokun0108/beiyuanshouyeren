@@ -1,0 +1,61 @@
+/* 定义北院守夜人到守夜人登录的布局 */
+.top{
+  height: 400rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+/* 设置头像 */
+.head{
+  height: 250rpx;
+  width: 250rpx;
+  border-radius: 50%;
+}
+/* 设置话题栏 */
+.under{
+  height: 600rpx;
+  display: flex;
+  flex-direction: column;
+ 
+}
+/* 设置行间距 */
+.a{
+  height: 20rpx;
+ 
+}
+/* 设置间距 */
+.b{
+  height: 20rpx;
+ 
+ 
+}
+/*设置间距  */
+.c{
+  height: 20rpx;
+}
+.image {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+  display: block;
+  padding-top:20px;
+}
+
+.name {
+  text-align: center;
+  padding-top:10px;
+}
+.color1{
+width: 3cm;
+background-color: khaki;
+border-radius: 1.5cm;
+}
+.color2{
+width: 3cm;
+background-color: khaki;
+border-radius: 1.5cm;
+}
+
+
+

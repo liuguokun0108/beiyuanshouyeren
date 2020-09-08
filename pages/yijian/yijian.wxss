@@ -1,0 +1,32 @@
+/* pages/yijian/yijian.wxss */
+.allbuttun{
+  display: flex;
+  direction: row;
+  margin-right: 100rpx;
+  margin-left: 230rpx;
+  margin-top:60rpx;
+  position: relative;
+  justify-content: space-between;
+
+}
+.button{
+  display: flex;
+  justify-content: center;
+  height: 75rpx;
+  margin-left: 50rpx;
+}
+.content{
+  width: 580rpx;
+  height: 400rpx;
+  margin-top: 150rpx;
+  display: flex;
+  justify-content: center;
+  margin-left: 80rpx;
+}
+.top{
+  display: flex;
+  flex: content;
+  justify-content: center;
+  margin-top: 100rpx;
+  font-weight: bold;
+}

@@ -1,0 +1,41 @@
+{
+  "pages": [
+    "pages/homepage/homepage",
+    "pages/index/index",
+    "pages/newtopic/newtopic",
+    "pages/fabude/fabude",
+    "pages/yijian/yijian",
+    "pages/quanbu/quanbu",
+    "pages/product/product"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "北院守夜人",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar":{
+    "list":[
+      {
+        "pagePath":"pages/homepage/homepage",
+        "text":"话题",
+        "iconPath":"images/huati2.png",
+        "selectedIconPath": "images/huati1.png"
+      },
+      {
+        "pagePath": "pages/newtopic/newtopic",
+        "text": "新建",
+        "iconPath": "images/taolun1.png",
+        "selectedIconPath": "images/taolun2.png"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "text": "我的",
+        "iconPath": "images/wode1.png",
+        "selectedIconPath": "images/wode2.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json",
+  "style": "v2"
+}

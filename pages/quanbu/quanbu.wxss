@@ -1,0 +1,241 @@
+/* pages/quanbu/quanbu.wxss */
+.top{
+  display: flex;
+  flex: content;
+  justify-content: center;
+  margin-top: 15rpx;
+  font-weight: bold;
+}
+.topic{
+  display: flex;
+  margin-top: 20rpx;
+}
+.head{
+  height: 120rpx;
+  width: 120rpx;
+}
+.image {
+  width: 110rpx;
+  height: 110rpx;
+  margin: 0 auto;
+  display: block;
+  margin-top: 1px;
+  border-radius: 50%;
+}
+.details{
+  display: flex;
+  flex-direction: column;
+  width: 750rpx;
+}
+.select{
+  display: flex;
+  flex: content;
+  justify-content: space-evenly;
+  margin-top: 25rpx;
+  font-weight: 800;
+
+}
+.tiaozhuan{
+  display: flex;
+  width: 100%;
+
+}
+.text{
+  width: 700rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  word-break: break-all;
+}
+.user-topic{
+  display: flex;
+  flex-direction: column;
+}
+.user-username{
+  display: flex;
+  flex-direction: row;
+}
+.time{
+  font-weight: 150;
+  font-size: small;
+}
+.c{
+  display: flex;
+  flex-direction: row;
+  width: 56%;
+  margin-left: 4cm;
+
+}
+
+.swiper_container {
+  height: 55rpx;
+  width: 80vw;
+}
+/* pages/quanbu/quanbu.wxss */
+.top{
+  display: flex;
+  flex: content;
+  justify-content: center;
+  margin-top: 15rpx;
+  font-weight: bold;
+}
+.topic{
+  display: flex;
+  margin-top: 20rpx;
+}
+.head{
+  height: 120rpx;
+  width: 120rpx;
+}
+.image {
+  width: 110rpx;
+  height: 110rpx;
+  margin: 0 auto;
+  display: block;
+  margin-top: 1px;
+  border-radius: 50%;
+}
+.details{
+  display: flex;
+  flex-direction: column;
+  width: 750rpx;
+}
+.select{
+  display: flex;
+  flex: content;
+  justify-content: space-evenly;
+  margin-top: 25rpx;
+  font-weight: 800;
+
+}
+.tiaozhuan{
+  display: flex;
+  width: 100%;
+
+}
+.text{
+  width: 700rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  word-break: break-all;
+  margin-left: -20px;
+}
+.user-topic{
+  display: flex;
+  flex-direction: column;
+}
+.user-username{
+  display: flex;
+  flex-direction: row;
+}
+.time{
+  font-weight: 150;
+  font-size: small;
+  color: darkorange;
+  font-style: italic;
+}
+.c{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin-left: 5cm;
+
+}
+
+.swiper_container {
+  height: 55rpx;
+  width: 80vw;
+}
+
+.pinglunyangshi{
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  word-break: break-all;
+  width:80%;
+  height:42rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.underdiscuss{
+  color: rgb(57, 134, 138);
+  font-weight: 500;
+  }
+  .underdiscuss2{
+    font-stretch: extra-condensed;
+    font-weight: 500;
+    font-size: 15px;
+    color: rgb(50, 50, 50);
+    }
+  .praise{
+    display: flex;
+    border: 1px solid rgb(214, 218, 230);
+    border-radius: 20rpx;
+    justify-content: center;
+    width: 0.7cm;
+    margin-left: 1.3cm;
+  }
+  .praise:active{
+    background-color: tomato;
+  }
+  .raw{
+    display: flex;
+    flex-direction: row;
+  }
+  .colorname{
+    color: darkorange;
+    font-weight: 300;
+  }
+.background {
+  width: 100%;
+  height: 100%;
+  position:fixed; 
+  background-size:100% 100%;
+  z-index: -1;
+}
+.item {
+  display: flex;
+  padding: 20rpx;
+  margin-left: 6.5cm;
+}
+ 
+.wish_list_box_collection image {
+  width: 45rpx;
+  height: 45rpx;
+  overflow: hidden;
+}
+.discussimage{
+  display: flex;
+  flex-direction: row; 
+  }
+  .discussimage2{
+    width: 44rpx;
+    height: 44rpx;
+    margin-left: 4rpx;
+    margin-right: 6rpx;
+  }
+    
+.pinglunyangshi{
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  word-break: break-all;
+  width:80%;
+  height:42rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.biankuang{
+  border: 4rpx solid #a9a7a7;
+  border-radius: 5px;
+  width: 97.5%;
+  margin-bottom: 15rpx;
+  margin-left: 5rpx;
+  }
+  

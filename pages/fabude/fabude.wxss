@@ -1,0 +1,36 @@
+/* pages/fabude/fabude.wxss */
+.top{
+  display: flex;
+  justify-content: center;
+  margin-top: 20rpx;
+  font-weight: bold;
+}
+.topic{
+  display: flex;
+}
+.head{
+  border-radius: 50%;
+  height: 200rpx;
+  width: 200rpx;
+}
+.image {
+  width: 190rpx;
+  height: 190rpx;
+  margin: 0 auto;
+  display: block;
+  margin-top: 1px;
+}
+.details{
+  display: flex;
+  flex-direction: column;
+  width: 520rpx;
+}
+text{
+  width: 450rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  word-break: break-all;
+}

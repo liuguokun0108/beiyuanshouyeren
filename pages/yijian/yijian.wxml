@@ -1,0 +1,15 @@
+<!--pages/yijian/yijian.wxml-->
+<view class="top">意见反馈</view>
+<form bindsubmit="submit">
+  <view style="border:1px solid"class="content">
+  <textarea maxlength="300" placeholder="意见反馈" name="yijian" auto-focus="ture" adjust-position="false" show-confirm-bar="false">
+  </textarea>
+  </view>
+
+<!-- 发布按钮 -->
+<view class="allbuttun">
+  <view class="button" >
+  <button form-type="submit" type="primary" size="mini" open-type="getUserInfo" lang="zh_CN" bindgetuserinfo="onGotUserInfo">点击反馈</button>
+  </view>
+  </view>
+</form>

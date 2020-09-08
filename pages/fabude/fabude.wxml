@@ -1,0 +1,16 @@
+<!--pages/fabude/fabude.wxml-->
+<view class="top">发布的话题</view>
+<view style="margin-bottom:100rpx" wx:for="{{data}}" wx:key="key" wx:for-item="item" wx:for-index="index" >  <!-- 最外框架1 -->
+<navigator url="../product/product?id={{item._id}}" >
+  <view style="border:1px solid #fff" class="topic"><!-- 定义列表 -->
+      <view class="head">
+      <image src="{{item.image}}" class="image"></image>
+      </view><!-- 定义头像 -->
+      <view class="details"><!-- 定义每个人发评论的信息 -->
+        <text>用户名：{{item.name}}</text>
+        <text>话题：{{item.newtopic}}</text>
+        </view>     
+    </view>
+    </navigator>
+    </view>
+
